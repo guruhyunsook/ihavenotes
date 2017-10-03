@@ -1,0 +1,64 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
+._.angular-cli.json
+._.DS_Store
+._.editorconfig
+._.gitignore
+._e2e
+._how-to-use.txt
+._karma.conf.js
+._package.json
+._protractor.conf.js
+._src
+._tsconfig.json
+._tslint.json
+._*
+
+.editorconfig
+e2e/._app.e2e-spec.ts
+e2e/._app.po.ts
+src/._app
+src/._assets
+src/._environments
+src/._favicon.ico
+src/._index.html
+src/._main.ts
+src/._polyfills.ts

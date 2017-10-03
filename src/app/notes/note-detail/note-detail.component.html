@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img
+      [src]="note.imagePath"
+      alt="{{ note.name }}"
+      class="img-responsive"
+      style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ note.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div
+      class="btn-group"
+      appDropdown>
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Note <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a (click)="onAddToActionList()" style="cursor: pointer;">To Action List</a></li>
+        <li><a style="cursor: pointer;" (click)="onEditNote()">Edit Note</a></li>
+        <li><a style="cursor: pointer;" (click)="onDeleteNote()">Delete Note</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{ note.description }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let action of note.actions">
+        {{ action.name }} - {{ action.amount }}
+      </li>
+    </ul>
+  </div>
+</div>

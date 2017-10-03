@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-action-edit></app-action-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let action of actions; let i = index"
+        (click)="onEditItem(i)"
+      >
+        {{ action.name }} ({{ action.amount }})
+      </a>
+    </ul>
+  </div>
+</div>
